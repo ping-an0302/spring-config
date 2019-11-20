@@ -3,7 +3,7 @@ spring:
     name: user-service
 
 server:
-  port: 8011
+  port: 8013
 
 management:
 #  info:
