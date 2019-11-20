@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: user-service
+
+server:
+  port: 8011
+
+management:
+#  info:
+#    git:
+#      mode: full # full
+
+
+
+#    eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8000/eureka
+
+#management:
+#  security:
+#    enabled: false
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+#     暴露所有端点
+
+#  eureka.instance.lease-renewal-interval-in-seconds
+#  心跳间隔时间，默认 30 秒
+#
+#  defaultZone，默认位置，可以修改为具体地理位置，比如：beiJing, shangHai, shenZhen 等，表示 eureka 服务器的部署位置
+#
+#  eureka.client.registry-fetch-interval-seconds
+#  拉取注册信息间隔时间，默认 30 秒
+#
+#    metadata-map:
+#      VERSION: 0.8.0
+#      NODE_GROUP_ID: ${HZERO_NODE_GROUP_ID:0}
+#      PRODUCT_CODE: ${HZERO_PRODUCT_CODE:DEFAULT}
+#      PRODUCT_VERSION_CODE: ${HZERO_PRODUCT_VERSION_CODE:DEFAULT}
+#      PRODUCT_ENV_CODE: ${HZERO_PRODUCT_ENV_CODE:DEFAULT}
+#      SERVICE_VERSION_CODE: ${HZERO_SERVICE_VERSION_CODE:DEFAULT}
+#    registryFetchIntervalSeconds: 10
+#    disable-delta: true
